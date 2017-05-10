@@ -49,6 +49,29 @@ void display()
                         for(int i=0;i<6;i++)
                             cout<<s2.marks[i]<<" ";
                         cout<<endl;
+                            n=0;
+                        for(int i=1;i<=6;i++)
+                        {
+                            if(s2.marks[i]<24)
+                            {
+                                cout<<"\t\t FAIL";
+                                break;
+                            }
+                            else
+                                n=n+s2.marks[i];
+                        }
+                        int avg=0;
+                        avg=n/6;
+                        if(avg>75)
+                            cout<<"\t\t"<<"Total is "<<n<<"Grade is A"<<endl;
+                        else if(avg>=50 && avg<75)
+                             cout<<"\t\t"<<"Total is "<<n<<"Grade is B"<<endl;
+                        else if(avg>=35 && avg<50)
+                            cout<<"\t\t"<<"Total is "<<n<<"Grade is C"<<endl;
+                        else
+                            {
+                                cout<<"\t\tFAIL"<<endl;
+                            }
                         }
                 }
                 fin.close();
@@ -75,6 +98,29 @@ void display()
                         for(int i=0;i<6;i++)
                             cout<<s2.marks[i]<<" ";
                         cout<<endl;
+                        n=0;
+                        for(int i=1;i<=6;i++)
+                        {
+                            if(s2.marks[i]<24)
+                            {
+                                cout<<"\t\t FAIL";
+                                break;
+                            }
+                            else
+                                n=n+s2.marks[i];
+                        }
+                        int avg=0;
+                        avg=n/6;
+                        if(avg>75)
+                            cout<<"\t\t"<<"Total is "<<n<<"Grade is A"<<endl;
+                        else if(avg>=50 && avg<75)
+                             cout<<"\t\t"<<"Total is "<<n<<"Grade is B"<<endl;
+                        else if(avg>=35 && avg<50)
+                            cout<<"\t\t"<<"Total is "<<n<<"Grade is C"<<endl;
+                        else
+                            {
+                                cout<<"\t\tFAIL"<<endl;
+                            }
                     }
                 }
             f.close();
